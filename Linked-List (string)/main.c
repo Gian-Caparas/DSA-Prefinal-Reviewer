@@ -45,23 +45,23 @@ int main() {
 
         switch (choice) {
             case 1:
-                deleteFirst(&head); break;
+                deleteFirst(&head); break; //done
             case 2:
-                deleteLast(&head); break;
+                deleteLast(&head); break; //done
             case 3:
                 char wordDelete[50];
                 printf("What word?: ");
-                scanf("%[^\n]s", wordDelete);
-                deleteWord(&head, wordDelete);
+                scanf(" %[^\n]s", &wordDelete);
+                deleteWord(&head, wordDelete); //done
                 break;
             case 4:
                 int index;
                 printf("What index: ");
                 scanf("%d", &index);
-                deleteIndex(&head, index);
+                deleteIndex(&head, index); //done
                 break;
             case 5:
-                deleteAllNodes(&head); break;
+                deleteAllNodes(&head); break; //done
         }
         printf("Updated linked-list\n");
         display(head);
